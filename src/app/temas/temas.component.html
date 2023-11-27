@@ -1,0 +1,102 @@
+<div>{{this.ir_Tema(temaid)}}</div>
+
+<mat-sidenav-container class="sidenav-container" >
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar>Menu</mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item (click)="irPrincipal()">HOME</a>
+        <div class="dropdown">
+          <div class="dropdown-header" (click)="toggleDropdown()">
+            <a mat-list-item>TEMAS
+            <i [ngClass]="{'fa-chevron-up': isDropdownOpen, 'fa-chevron-down': !isDropdownOpen}" class="fa"></i>
+          </a>
+          </div>
+          <div *ngIf="isDropdownOpen" class="dropdown-list">
+            <div *ngFor="let tema of temas" (click)="seleccionarTema(tema.titulo)">
+              <a mat-list-item (click)="ir_Tema(tema.id)">{{ tema.titulo }}</a>
+            </div>
+          </div>
+        </div>
+        
+      <a mat-list-item href="http://informatica.umsa.bo">REFERENCIAS</a>
+      
+
+      <a mat-list-item (click)="redirectToYoutube(this.id)">VIDEO</a>
+      <a mat-list-item (click)="irforms(this.id)">EJERICIOS</a>        
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <mat-toolbar class="top">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span class="titulo" >Mis Apuntes Informática</span>
+        
+      </mat-toolbar>
+      <!-- Add Content Here -->
+      <!-- esto pusimos recien -->
+      <!-- <div class="grid-container">
+        <h1 class="mat-h1">Temario</h1>
+        
+        <mat-grid-list cols="1" >
+          <mat-grid-tile *ngFor="let card of cards | async"  >
+            <mat-card class="dashboard-card" id="{{card.ideT}}">
+              <mat-card-header>
+                <mat-card-title>
+                  {{card.title}}
+                  
+                  
+                  
+                </mat-card-title>
+              </mat-card-header>
+              <div class="dashboard-card-content">
+                <div *ngFor="let subtema of this.card.subtemas">
+                  <div>
+                  {{subtema.TituloSubtema}}
+                </div>
+                <div>
+                  {{subtema.descripcionSubtema}}
+                </div>
+                </div>
+              </div>
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div> -->
+      
+      <div class="grid-container">
+        <div *ngFor="let card of cards | async " id="{{card.ideT}}">
+        <h1 class="mat-h1"><b>{{card.title}} </b></h1>
+          <div>
+          {{card.contenid}}<p>
+          </div>
+          <p>
+          <div class="cuadrado">
+          <div *ngFor="let subtema of this.card.subtemas" >
+            <div >
+              
+              <h2 class="subtema-color">{{subtema.TituloSubtema}}</h2>
+              {{subtema.descripcionSubtema}}<br/>
+              <div class="centreado" *ngIf="subtema.img != '' ">
+                <img [src]="subtema.img" class="imagenes-subtemas"/><br/>
+              </div>
+              
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+    </mat-sidenav-content>
+    
+  </mat-sidenav-container>
+  

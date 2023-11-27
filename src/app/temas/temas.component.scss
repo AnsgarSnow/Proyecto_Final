@@ -1,0 +1,161 @@
+.grid-container {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(214, 28, 99);
+  padding: 25px;
+}
+.mat-h1{
+  color:#e2dfeb;
+}
+.subtema-color{
+  color: #79164b;
+}
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  height: max-content;
+  padding: 25px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  
+  
+}
+.sidenav-container {
+  height: 100%;
+  text-align: justify;
+  
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #cddef5;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
+}
+.top{
+  background-color: #20368F;
+  color: #AcE7ff;
+  width: 100%;
+  height: 20%;
+  
+}
+.navbar {
+  overflow: hidden;
+  background-color: #f3e6e6;
+  
+  
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.imagenes-subtemas{
+  width: 50%;
+  height: 20%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.centreado{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.cuadrado {
+  background-color: #E2DFEB;
+  text-align: justify;
+  margin : 15px;  
+  height: auto;
+  padding: 45px;
+  display: block;
+  
+}
+.cuadrado1 {
+  background-color: rgb(188, 143, 190);
+  text-align: justify;
+  margin: auto;
+  width: 90%;
+  height: auto;
+  padding: 25px;
+  
+} 
+.titulo{
+  font-size: 40px;
+}
+
+//////////////////////////////////
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  color: #20368F;
+  
+}
+
+.dropdown-header {
+  color: #fff;
+  cursor: pointer;
+  color: #20368F;
+}
+
+.dropdown-list {
+  display: block;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 5px;
+  z-index: 1000;
+  height: 47px;
+  width: 100%;
+  color: #20368F;
+}
+
+.dropdown-list div {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-list div:hover {
+  background-color: #ffffff;
+}
+
+.fa {
+  float: right;
+}
+
+.fa-chevron-up::before {
+  content: '\25B2';
+}
+
+.fa-chevron-down::before {
+  content: '\25BC';
+}

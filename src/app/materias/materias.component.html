@@ -1,0 +1,32 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav-content>
+      <mat-toolbar class="hola">  
+        <div class="hola1">    
+          <span>  Mis apuntes de Primer Semestre en Informatica </span>
+        </div>
+        <div class="barra-navegacion">
+          <a routerLink="/" class="botones" (click)="irPrincipal()">Home</a>
+          <a routerLink="/seccion1" class="botones" (click)="redirectToYoutube(this.id)">Videos</a>
+          <a routerLink="/seccion2" class="botones" (click)="irforms(this.id)">Ejercicios</a>
+          <a routerLink="/seccion2" class="botones" (click)="irTutores(this.id)">Tutores</a>
+        </div>
+      </mat-toolbar>
+      <div class="grid-container">
+        <div class="versoT">
+          Bienvenido a {{materia}} 
+        </div>
+        <div class="verso1">
+          {{descripcion}}
+        </div>
+        <div class="verso">
+          Temas
+        </div>
+        
+        <div class="barra-desplazamiento">
+          <div class="contenedor-divs">
+            <app-div class="div-contenedor" *ngFor="let item of divsContenido" [tema]="item.tema" [contenido]="item.contenido" (click)="irTemas1(this.id, item.temaid)"></app-div>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

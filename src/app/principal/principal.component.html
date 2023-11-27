@@ -1,0 +1,143 @@
+<header>
+    <nav>
+      <a routerLink="./app-registro" class="navegacion_registro">Registro</a>
+    </nav>
+    <section class="titulo_principal">
+          <h1>Primeros Pasos en Informática</h1>
+          <h2> Mis Apuntes del Primer Semestre</h2>
+    </section>  
+    <div class="fig_ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C220.93,167.28 251.41,-45.86 501.41,55.77 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: white;"></path></svg></div>
+  </header>
+  
+  <section class="caja informacion">
+    <div class="caja_informacion_especifica">
+      <div class="titulo_info_1">
+        <h1>Bienvenidos a Primeros Pasos en Informática</h1>
+        <h5>En Primeros Pasos en Informática, Forjamos el Éxito en el Mundo de la Informática.</h5>
+        <p class="parrafo">Bienvenidos, nuevos estudiantes de informática. En este viaje educativo, nos enorgullece ser su guía, ofreciendo no solo información detallada sobre las materias que cursarán, sino también un ecosistema enriquecedor que les brindará el apoyo necesario para triunfar en su primer semestre universitario.</p>
+      </div>
+      <figure class="imagen_info_1">
+        <img [src]="'assets/img/imagen_vertical.jpg'" alt="Imagen Nosotros" class="imagen_nosotros_1"/>
+      </figure>         
+    </div>  
+  </section>
+  <section class="ancho">
+  <section class="caja info_rapida">
+    <h1>Construye tu Camino</h1> 
+    <div class="caja_3_enseñar" >
+      
+      <div class="caja_intro">
+        <figure class="caja_imagen">
+          <img [src]="'assets/img/computer-_1_.svg'" alt="Imagen_intro_2" class="imagen_intro"/>
+        </figure>
+        <h5>DESAROLLA</h5>
+        <p>Aquí, la creatividad y la codificación se encuentran para dar vida a tus ideas. Desarrolla tus habilidades, transforma tu imaginación en código y despierta el creador que llevas dentro.</p>
+      </div>
+      <div class="caja_intro">
+        <figure class="caja_imagen">
+          <img [src]="'assets/img/hacker.svg'" alt="Imagen_intro_2" class="imagen_intro"/>
+        </figure>
+          <h5>APRENDE</h5>
+          <p>En nuestra plataforma, aprender es más que adquirir información; es descubrir, experimentar y desafiar tus límites. ¿Listo para convertirte en un maestro de la tecnología? </p>
+      </div>
+      <div class="caja_intro">
+        <figure class="caja_imagen">
+          <img [src]="'assets/img/monitor.svg'" alt="Imagen_intro_2" class="imagen_intro"/>
+        </figure>
+        <h5>SUPERATE</h5>
+        <p> Supérate a ti mismo cada día, resuelve problemas complejos, y conquista los desafíos que se presentan. Aquí no solo construimos líneas de código, sino también puentes hacia el futuro.</p>
+      </div>   
+    </div>
+  </section>
+  </section>
+  <section class="caja materia">
+    <h1 class="titulo_materia">Explora nuestros cursos disponibles</h1>
+    <div class="caja_materias">
+      <div class="materia_1">
+        <div class="img_materia_1">
+          <img [src]="'assets/img/imagen_fondo_1.jpeg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_1">
+          <h2 class="title">Programacion I</h2>
+          <p class="parrafo_m">Esta materia suele ser una introducción a la programación de computadoras. Los estudiantes aprenden conceptos fundamentales de programación, como variables, tipos de datos, estructuras de control (ciclos y condicionales) y funciones. También se pueden cubrir aspectos de resolución de problemas algorítmicos y el uso de un lenguaje de programación específico.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(1)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_2">
+        <div class="img_materia_2">
+          <img [src]="'assets/img/imagen_fondo_1.jpeg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_2">
+          <h2 class="title">Programacion Web I</h2>
+          <p class="parrafo_m">En esta materia, los estudiantes se centran en el desarrollo web. Se exploran tecnologías y herramientas esenciales para la creación de páginas web interactivas y dinámicas. Esto incluye el uso de HTML, CSS y JavaScript, así como posiblemente algún marco de desarrollo web. También se pueden abordar conceptos como el manejo de eventos, la manipulación del DOM y las peticiones HTTP.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(2)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_3">
+        <div class="img_materia_3">
+          <img [src]="'assets/img/imagen_fondo_1.jpeg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_3">
+          <h2 class="title">Fundamentos Digitales</h2>
+          <p class="parrafo_m">Esta materia se enfoca en los principios fundamentales de la representación y manipulación de información en sistemas digitales. Los temas pueden incluir álgebra booleana, lógica digital, diseño de circuitos combinacionales y secuenciales, así como la arquitectura básica de computadoras. Es esencial para comprender cómo funcionan internamente las computadoras.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(3)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_4">
+        <div class="img_materia_4">
+          <img [src]="'assets/img/imagen_fondo_1.jpeg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_4">
+          <h2 class="title">Algebra I</h2>
+          <p class="parrafo_m">Álgebra 1 es un curso introductorio de álgebra que cubre conceptos fundamentales como ecuaciones lineales, polinomios, factorización, sistemas de ecuaciones lineales y funciones algebraicas. Este curso sienta las bases para cursos más avanzados de álgebra y matemáticas.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(4)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_5">
+        <div class="img_materia_5">
+          <img [src]="'assets/img/imagen_fondo_1.jpeg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_5">
+          <h2 class="title">Fisica I</h2>
+          <p class="parrafo_m">La Física 1 es generalmente una introducción a los principios fundamentales de la física. Puede cubrir mecánica clásica, que incluye cinemática, dinámica, trabajo y energía, así como temas relacionados con el movimiento de los cuerpos. Los estudiantes pueden aprender a aplicar principios físicos para entender el comportamiento del mundo que los rodea.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(5)"> Quiero acceder al curso</button>
+        </div> 
+      </div>
+      <div class="materia_6">
+        <div class="img_materia_6">
+          <img [src]="'assets/img/imagen_fondo_1.jpeg'" alt="Imagen Materia"  class="imagen_materia"/>
+        </div>
+        <div class="text_materia_6">
+          <h2 class="title">Calculo I</h2>
+          <p class="parrafo_m">Cálculo 1 es un curso introductorio de cálculo diferencial e integral. Los estudiantes exploran conceptos como límites, derivadas e integrales. Se centra en el estudio del cambio y la acumulación, y establece las bases para cursos más avanzados de cálculo y matemáticas aplicadas.
+          </p>
+          <br>
+          <button  href="#" class="cta" (click)="irMateria(6)"> Quiero acceder al curso</button>
+        </div> 
+      </div>  
+    </div> 
+  </section>
+  <footer>
+    <ul class="social">
+      <li>
+        <a href="#"><img [src]="'assets/img/social1.png'" alt="Imagen_Social"  class="imagen_social"/></a>
+      </li>
+      <li>
+        <a href="#"><img [src]="'assets/img/social2.png'" alt="Imagen_Social"  class="imagen_social"/></a>
+      </li>
+      <li>
+        <a href="#"><img [src]="'assets/img/social3.png'" alt="Imagen_Social"  class="imagen_social"/></a>
+      </li>
+    </ul>
+    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 391.52,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill:white;"></path></svg></div>
+  </footer>
